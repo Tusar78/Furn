@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "title": "Wooden Chair",
+    "price": 65.0,
+    "description": "A piece of furniture designed to accommodate one sitting or reclining person, providing support for the back and often the arms and typically standing on four legs.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals1.png",
+    "rating": {
+      "rate": 4.7,
+      "count": 120
+    }
+  },
+  {
+    "id": 2,
+    "title": "Single Armchair",
+    "price": 80.0,
+    "description": "An armchair is a comfortable, cushioned chair with a support on each side, where you can rest your arms while you sit. Some armchairs are big enough that you can curl up and read a book in them. Armchairs are distinguished by their arms, rests built to comfortably support your arms.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals2.png",
+    "rating": {
+      "rate": 4.1,
+      "count": 20
+    }
+  },
+  {
+    "id": 3,
+    "title": "Wooden Armchair",
+    "price": 40.0,
+    "description": " A piece of furniture designed to accommodate one sitting or reclining person, providing support for the back and often the arms and typically standing on four legs.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals3.png",
+    "rating": {
+      "rate": 4.0,
+      "count": 150
+    }
+  },
+  {
+    "id": 4,
+    "title": "Stylish Chair",
+    "price": 40.0,
+    "description": " A piece of furniture designed to accommodate one sitting or reclining person, providing support for the back and often the arms and typically standing on four legs.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals4.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 170
+    }
+  },
+  {
+    "id": 5,
+    "title": "Modern Chair",
+    "price": 120.0,
+    "description": " A piece of furniture designed to accommodate one sitting or reclining person, providing support for the back and often the arms and typically standing on four legs.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals5.png",
+    "rating": {
+      "rate": 4.3,
+      "count": 79
+    }
+  },
+  {
+    "id": 6,
+    "title": "Mapple Wood Dinning Table",
+    "price": 140.0,
+    "description": "It is particularly hardy, and it's frequently used in dressers and cabinets. You won't have to worry about denting a maple dining room table. Maple goes particularly well with darker stains and can be made to look like cherry.",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals6.png",
+    "rating": {
+      "rate": 3.9,
+      "count": 89
+    }
+  },
+  {
+    "id": 7,
+    "title": "Arm Chair",
+    "price": 90.0,
+    "description": "An armchair is a comfortable, cushioned chair with a support on each side, where you can rest your arms while you sit. Some armchairs are big enough that you can curl up and read a book in them. Armchairs are distinguished by their arms rests built to comfortably support your arms",
+    "category": "Furniture",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals7.png",
+    "rating": {
+      "rate": 4.5,
+      "count": 110
+    }
+  },
+  {
+    "id": 8,
+    "title": "Wooden Bed",
+    "price": 140,
+    "description": "A bed frame is designed to provide even support for a box spring and the mattress. Sometimes referred to as a bedstead, they can describe a wide variety of support structures built specifically for mattresses and box springs. Traditionally, this includes the header, footer, legs, and side rails.",
+    "image": "https://raw.githubusercontent.com/Tusar78/Furn/main/src/assets/images/arrivals8.png",
+    "rating": {
+      "rate": 4.6,
+      "count": 115
+    }
+  }
+]
