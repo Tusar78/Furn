@@ -19,6 +19,14 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        <div className="nav__attributes">
+          <ul className="attributes__list">
+            <li className="attributes__item attributes--search">
+              
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
