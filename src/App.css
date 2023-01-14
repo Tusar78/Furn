@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  :root {
+    --body-font: 'Alegreya Sans', sans-serif;
+    --heading-font: 'Exo 2', sans-serif;
+  }
+
+  body {
+    font-family: var(--heading-font);
+  }
+}
