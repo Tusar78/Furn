@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   RiCloseLine,
   RiSettings4Line,
   RiShoppingCartLine,
-  RiSearch2Line,
+  RiSearchLine,
 } from "react-icons/ri";
 
 // Connect Navbar CSS
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [search, setSearch] = useState(false);
+  console.log(search);
+
   return (
     <section className="navigation section">
-      <div className="navigation__search">
+      <div className={search ? 'h-14 opacity-1 navigation__search' : 'navigation__search'}>
         <div className="search custom-container">
           <div className="search__btn">
-            <RiSearch2Line className="search--icon" />
+            <RiSearchLine className="search--icon" />
           </div>
           <div className="search__filled">
             <input type="text" placeholder="Search" className="search__filled-text" />
@@ -44,8 +47,8 @@ const Navbar = () => {
 
         <div className="nav__attributes">
           <ul className="attributes__list">
-            <li className="attributes__item">
-              <RiSearch2Line className="attributes--search" />
+            <li className="attributes__item" onClick={() => setSearch(!search)}>
+              <RiSearchLine className="attributes--search" />
             </li>
             <li className="attributes__item">
               <RiSettings4Line className="attributes--setting" />
