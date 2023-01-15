@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="search__filled">
             <input type="text" placeholder="Search" className="search__filled-text" />
           </div>
-          <div className="search__close">
+          <div className="search__close" onClick={() => setSearch(!search)}>
             <RiCloseLine className="search--icon" />
           </div>
         </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
             <li className="attributes__item">
               <RiShoppingCartLine className="attributes--cart" />
-              <span className="attributes__count">2</span>
+              <span className="attributes__count">0</span>
             </li>
           </ul>
         </div>
