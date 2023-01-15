@@ -26,7 +26,11 @@
   }
 
   .attributes__item {
-    @apply text-[20px] text-[#616060] cursor-pointer transition duration-300 hover:text-yellow-500;
+    @apply relative text-[20px] text-[#616060] cursor-pointer transition duration-300 hover:text-yellow-500;
+  }
+
+  .attributes__count {
+    @apply absolute -top-1 -right-2 text-xs w-4 h-4 bg-yellow-500 flex items-center justify-center rounded-2xl text-white font-semibold font-head;
   }
 
 }

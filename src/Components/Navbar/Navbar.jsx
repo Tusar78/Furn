@@ -32,6 +32,7 @@ const Navbar = () => {
             </li>
             <li className="attributes__item">
               <CiShoppingCart className="attributes--cart" />
+              <span className="attributes__count">2</span>
             </li>
           </ul>
         </div>
