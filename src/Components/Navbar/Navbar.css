@@ -33,4 +33,28 @@
     @apply absolute -top-3 -right-3 text-xs w-5 h-5 bg-yellow-500 flex items-center justify-center rounded-2xl font-medium text-white;
   }
 
+  /* =-= Search Filled =-= */
+  .navigation__search {
+    @apply h-14 bg-gray-700 transition duration-300 ease-in-out;
+  }
+
+  .search {
+    @apply max-w-[1160px] h-full flex items-center space-x-2;
+  }
+
+  .search__filled {
+    @apply w-full;
+  }
+
+  .search__filled-text {
+    @apply w-full bg-transparent border-none outline-none font-body text-white;
+  }
+
+  .search--icon {
+    @apply text-white cursor-pointer;
+  }
+
+  .search__close {
+    @apply w-6 h-6 border flex items-center justify-center rounded-sm;
+  }
 }

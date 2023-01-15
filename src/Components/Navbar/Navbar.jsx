@@ -13,12 +13,16 @@ const Navbar = () => {
   return (
     <section className="navigation section">
       <div className="navigation__search">
-        <div className="search container">
+        <div className="search custom-container">
           <div className="search__btn">
-            <RiCloseLine />
+            <RiSearch2Line className="search--icon" />
           </div>
-          <div className="search__filled"></div>
-          <div className="search__close"></div>
+          <div className="search__filled">
+            <input type="text" placeholder="Search" className="search__filled-text" />
+          </div>
+          <div className="search__close">
+            <RiCloseLine className="search--icon" />
+          </div>
         </div>
       </div>
       <nav className="nav custom-container">
