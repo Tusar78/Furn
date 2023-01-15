@@ -22,15 +22,15 @@
   }
 
   .nav__link {
-    @apply uppercase font-head text-sm tracking-wide transition duration-300 hover:text-yellow-500;
+    @apply uppercase font-head text-sm tracking-wide transition duration-300 hover:text-yellow-500 text-gray-500;
   }
 
   .attributes__item {
-    @apply relative text-[20px] text-[#616060] cursor-pointer transition duration-300 hover:text-yellow-500;
+    @apply relative text-xl text-gray-500 cursor-pointer transition duration-300 hover:text-yellow-500;
   }
 
   .attributes__count {
-    @apply absolute -top-1 -right-2 text-xs w-4 h-4 bg-yellow-500 flex items-center justify-center rounded-2xl text-white font-semibold font-head;
+    @apply absolute -top-3 -right-3 text-xs w-5 h-5 bg-yellow-500 flex items-center justify-center rounded-2xl font-medium text-white;
   }
 
 }

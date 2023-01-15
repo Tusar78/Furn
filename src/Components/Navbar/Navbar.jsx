@@ -1,10 +1,26 @@
 import React from "react";
-import { CiSearch, CiSettings, CiShoppingCart } from "react-icons/ci";
-import './Navbar.css'
+import {
+  RiCloseLine,
+  RiSettings4Line,
+  RiShoppingCartLine,
+  RiSearch2Line,
+} from "react-icons/ri";
+
+// Connect Navbar CSS
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <section className="navigation section">
+      <div className="navigation__search">
+        <div className="search container">
+          <div className="search__btn">
+            <RiCloseLine />
+          </div>
+          <div className="search__filled"></div>
+          <div className="search__close"></div>
+        </div>
+      </div>
       <nav className="nav custom-container">
         <a href="/" className="nav__brand">
           Furn
@@ -25,13 +41,13 @@ const Navbar = () => {
         <div className="nav__attributes">
           <ul className="attributes__list">
             <li className="attributes__item">
-              <CiSearch className="attributes--search" />
+              <RiSearch2Line className="attributes--search" />
             </li>
             <li className="attributes__item">
-              <CiSettings className="attributes--setting" />
+              <RiSettings4Line className="attributes--setting" />
             </li>
             <li className="attributes__item">
-              <CiShoppingCart className="attributes--cart" />
+              <RiShoppingCartLine className="attributes--cart" />
               <span className="attributes__count">2</span>
             </li>
           </ul>
