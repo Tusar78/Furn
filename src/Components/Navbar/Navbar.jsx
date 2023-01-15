@@ -1,4 +1,5 @@
 import React from "react";
+import { CiSearch, CiSettings, CiShoppingCart } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -22,8 +23,14 @@ const Navbar = () => {
 
         <div className="nav__attributes">
           <ul className="attributes__list">
-            <li className="attributes__item attributes--search">
-              
+            <li className="attributes__item">
+              <CiSearch className="attributes--search" />
+            </li>
+            <li className="attributes__item">
+              <CiSettings className="attributes--setting" />
+            </li>
+            <li className="attributes__item">
+              <CiShoppingCart className="attributes--cart" />
             </li>
           </ul>
         </div>
