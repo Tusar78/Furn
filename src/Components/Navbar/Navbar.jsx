@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <section className="navigation section">
-      <div className={search ? 'h-14 opacity-1 navigation__search' : 'navigation__search'}>
+      <div className={search ? 'navigation__search--show' : 'navigation__search'}>
         <div className="search custom-container">
           <div className="search__btn">
             <RiSearchLine className="search--icon" />
