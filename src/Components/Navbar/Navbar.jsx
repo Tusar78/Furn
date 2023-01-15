@@ -1,10 +1,11 @@
 import React from "react";
 import { CiSearch, CiSettings, CiShoppingCart } from "react-icons/ci";
+import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="nav section">
+    <section className="navigation section">
+      <nav className="nav custom-container">
         <a href="/" className="nav__brand">
           Furn
         </a>
@@ -35,7 +36,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </section>
   );
 };
 

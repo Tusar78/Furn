@@ -1,5 +1,5 @@
 /* =-= Exo 2 - For Heading =-= */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
 
 /* =-= Alegreya Sans - For body font =-= */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
@@ -8,3 +8,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .custom-container {
+    @apply max-w-[1140px] pl-4 pr-4 mx-auto;
+  }
+}

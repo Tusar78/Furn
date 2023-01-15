@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Exo 2", "sans-serif"],
+        head: ["'Exo 2'", "sans-serif"],
         body: ["Alegreya Sans", "sans-serif"],
       },
     },

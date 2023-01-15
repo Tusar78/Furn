@@ -1,0 +1,32 @@
+@tailwind components;
+
+@layer components {
+  .navigation {
+    @apply w-full bg-[#F8F9FD];
+  }
+
+  .nav {
+    @apply max-w-[1160px] h-28 flex justify-between items-center;
+  }
+
+  .nav__list {
+    @apply flex space-x-12;
+  }
+
+  .attributes__list {
+    @apply flex space-x-6;
+  }
+
+  .nav__brand {
+    @apply text-2xl font-head font-bold uppercase text-yellow-500;
+  }
+
+  .nav__link {
+    @apply uppercase font-head text-sm tracking-wide transition duration-300 hover:text-yellow-500;
+  }
+
+  .attributes__item {
+    @apply text-[20px] text-[#616060] cursor-pointer transition duration-300 hover:text-yellow-500;
+  }
+
+}
