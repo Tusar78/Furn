@@ -12,6 +12,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [search, setSearch] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <section className="navigation section">
@@ -37,7 +38,7 @@ const Navbar = () => {
       <nav className="nav custom-container">
         <div className="nav__logo">
           {/* =-= Show in Tablet View =-= */}
-          <div className="nav__toggle">
+          <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
             <RiMenuLine className="nav__toggle--icon" />
           </div>
 
@@ -46,12 +47,16 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="nav__menu">
-          <ul className="nav__list">
+        <div className={toggle ? "nav__menu nav__menu--show" : "nav__menu"}>
+          <ul className={toggle ? "nav__list nav__list--show" : "nav__list"}>
             {/* =-= In Tablet View =-= */}
             <div className="nav__logo--tablet">
-              <div className="nav__toggle">
-                <RiMenuLine className="nav__toggle--icon" />
+              <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
+                {toggle ? (
+                  <RiCloseLine className="nav__toggle--icon" />
+                ) : (
+                  <RiMenuLine className="nav__toggle--icon" />
+                )}
               </div>
 
               <a href="/" className="nav__brand">
