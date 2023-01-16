@@ -15,13 +15,19 @@ const Navbar = () => {
 
   return (
     <section className="navigation section">
-      <div className={search ? 'navigation__search--show' : 'navigation__search'}>
+      <div
+        className={search ? "navigation__search--show" : "navigation__search"}
+      >
         <div className="search custom-container">
           <div className="search__btn">
             <RiSearchLine className="search--icon" />
           </div>
           <div className="search__filled">
-            <input type="text" placeholder="Search" className="search__filled-text" />
+            <input
+              type="text"
+              placeholder="Search"
+              className="search__filled-text"
+            />
           </div>
           <div className="search__close" onClick={() => setSearch(!search)}>
             <RiCloseLine className="search--icon" />
@@ -29,16 +35,29 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="nav custom-container">
-        <div className="nav__toggle">
-          <RiMenuLine className="nav__toggle--icon" />
-        </div>
+        <div className="nav__logo">
+          {/* =-= Show in Tablet View =-= */}
+          <div className="nav__toggle">
+            <RiMenuLine className="nav__toggle--icon" />
+          </div>
 
-        <a href="/" className="nav__brand">
-          Furn
-        </a>
+          <a href="/" className="nav__brand">
+            Furn
+          </a>
+        </div>
 
         <div className="nav__menu">
           <ul className="nav__list">
+            {/* =-= In Tablet View =-= */}
+            <div className="nav__logo--tablet">
+              <div className="nav__toggle">
+                <RiMenuLine className="nav__toggle--icon" />
+              </div>
+
+              <a href="/" className="nav__brand">
+                Furn
+              </a>
+            </div>
             {["Home", "Arrivals", "Features", "Blog", "Contact"].map((item) => (
               <li className="nav__item" key={item}>
                 <a href={`#${item}`} className="nav__link">

@@ -2,7 +2,7 @@
 
 @layer components {
   .navigation {
-    @apply w-full bg-[#F8F9FD];
+    @apply w-full bg-[#F8F9FD] relative;
   }
 
   .nav {
@@ -60,5 +60,71 @@
 
   .search__close {
     @apply w-6 h-6 border flex items-center justify-center rounded-sm;
+  }
+
+  .nav__logo {
+    @apply flex items-center;
+  }
+
+  .nav__logo--tablet {
+    @apply hidden;
+  }
+
+  .nav__toggle {
+    @apply hidden items-center justify-center w-7 h-6 border border-gray-400 rounded-md;
+  }
+
+  .nav__toggle--icon {
+    @apply text-gray-600 text-base;
+  }
+
+  /* =-= Laptop Screen Size =-= */
+  @media screen and (max-width: 991.98px) {
+    .nav__list {
+      @apply space-x-7;
+    }
+
+    .attributes__list {
+      @apply space-x-5;
+    }
+  }
+
+  /* =-= Tablet Screen Size =-= */
+  @media screen and (max-width: 768.98px) {    
+    .nav {
+      @apply h-20;
+    }
+
+    .nav__logo {
+      @apply space-x-4
+    }
+    
+    .nav__toggle {
+      display: flex;
+    }
+
+    .nav__menu {
+      @apply flex absolute top-0 left-0 min-w-0 overflow-hidden min-h-screen bg-black/50 z-50 transition-all duration-100 ease-linear; 
+    }
+
+    .nav__menu--show {
+      @apply min-w-full overflow-visible;
+    }
+
+    .nav__list {
+      @apply flex-col space-x-0 absolute opacity-0 w-0 min-h-screen bg-white pl-8 pt-6 transition-all duration-300 ease-in;
+    }
+
+    .nav__list--show {
+      @apply w-60 opacity-100;
+    }
+
+    .nav__logo--tablet {
+      @apply flex items-center space-x-4 mb-6;
+    }
+
+    .nav__item {
+      @apply mb-4;
+    }
   }
 }
