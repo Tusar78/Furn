@@ -4,6 +4,7 @@ import {
   RiSettings4Line,
   RiShoppingCartLine,
   RiSearchLine,
+  RiMenuLine,
 } from "react-icons/ri";
 
 // Connect Navbar CSS
@@ -11,7 +12,6 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [search, setSearch] = useState(false);
-  console.log(search);
 
   return (
     <section className="navigation section">
@@ -29,6 +29,10 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="nav custom-container">
+        <div className="nav__toggle">
+          <RiMenuLine className="nav__toggle--icon" />
+        </div>
+
         <a href="/" className="nav__brand">
           Furn
         </a>
