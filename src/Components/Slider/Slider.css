@@ -1,0 +1,56 @@
+@tailwind components;
+
+@layer components {
+  .slider__item-wrap {
+    @apply flex items-center;
+  }
+
+  .slider__wrap-content {
+    @apply w-2/3;
+  }
+
+  .slider__wrap-image {
+    @apply w-1/2;
+  }
+
+  .slider__subtitle {
+    @apply text-2xl font-normal font-body text-[#998d80];
+  }
+
+  .slider__title {
+    @apply text-5xl text-[#616060] font-normal font-head mt-5 mb-9;
+  }
+
+  .slider__text {
+    @apply text-base text-[#a09e9c] font-body mb-5;
+  }
+
+  .slider__price {
+    @apply flex gap-4;
+  }
+
+  .slider__price span,
+  .slider__price del {
+    @apply text-[#616060] font-medium font-body text-base;
+  }
+
+  .slider__price del {
+    @apply text-[#bbb9b9];
+  }
+
+  .slider__buttons {
+    @apply flex gap-1 mt-9;
+  }
+
+  .slider__btn  {
+    @apply flex items-center gap-2 py-4 px-8 text-base font-medium font-body rounded transition-colors duration-300 ease-in border border-white;
+  }
+
+  .slider__btn--pill {
+    @apply bg-yellow-500 text-white hover:bg-white border border-yellow-500  hover:text-yellow-500;
+  }
+
+  .slider__btn--noPill {
+    @apply hover:border hover:border-yellow-500;
+  }
+}
