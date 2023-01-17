@@ -83,7 +83,7 @@ const Navbar = () => {
             </li>
             <li className="attributes__item">
               <RiShoppingCartLine className="attributes--cart" />
-              <span className="attributes__count">0</span>
+              <span className="attributes__count">2</span>
             </li>
           </ul>
         </div>
