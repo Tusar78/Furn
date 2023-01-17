@@ -3,24 +3,29 @@ import { images } from "../../Constant";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// import required modules
-import { Pagination } from "swiper";
+
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 // Import Own Style
 import './Slider.css'
 
+// import required modules
+import { EffectFade, Pagination } from "swiper";
+
 const Slider = () => {
   return (
     <div className="hero__slider">
       <Swiper
+        spaceBetween={30}
+        effect={"fade"}
         pagination={{
-          dynamicBullets: true,
+          clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[EffectFade, Pagination]}
         className="mySwiper slider__list"
       >
         <SwiperSlide className="slider__item">
@@ -84,7 +89,7 @@ const Slider = () => {
             </div>
             <div className="slider__wrap-image">
               <img
-                src={images.slider01}
+                src={images.slider02}
                 alt="Slider Img"
                 className="slider__img"
               />
@@ -118,7 +123,7 @@ const Slider = () => {
             </div>
             <div className="slider__wrap-image">
               <img
-                src={images.slider01}
+                src={images.slider03}
                 alt="Slider Img"
                 className="slider__img"
               />

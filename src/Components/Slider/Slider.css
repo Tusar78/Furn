@@ -1,6 +1,10 @@
 @tailwind components;
 
 @layer components {
+  .slider__item {
+    @apply bg-blue-400
+  }
+
   .slider__item-wrap {
     @apply flex items-center;
   }
