@@ -67,6 +67,6 @@
 @layer utilities {
   .slider__item,
   .slider__item-wrap {
-    height: calc(100vh - 120px);
+    height: 600px;
   }
 }
