@@ -1,7 +1,18 @@
 @tailwind components;
+@tailwind utilities;
 
 @layer components {
   .header {
-    @apply w-full min-h-screen bg-[#F8F9FD];
+    @apply w-full bg-[#F8F9FD];
+  }
+
+  .hero {
+    /* @apply pt-12; */
+  }
+}
+
+@layer utilities {
+  .header {
+    height: calc(100vh - 80px);
   }
 }

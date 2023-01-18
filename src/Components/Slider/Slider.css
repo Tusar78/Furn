@@ -1,8 +1,9 @@
 @tailwind components;
+@tailwind utilities;
 
 @layer components {
   .slider__item {
-    @apply bg-blue-400
+    @apply bg-[#F8F9FD];
   }
 
   .slider__item-wrap {
@@ -22,7 +23,7 @@
   }
 
   .slider__title {
-    @apply text-5xl text-[#616060] font-normal font-head mt-5 mb-9;
+    @apply text-5xl text-[#616060] font-medium font-head mt-5 mb-9;
   }
 
   .slider__text {
@@ -46,7 +47,7 @@
     @apply flex gap-1 mt-9;
   }
 
-  .slider__btn  {
+  .slider__btn {
     @apply flex items-center gap-2 py-4 px-8 text-base font-medium font-body rounded transition-colors duration-300 ease-in border border-white;
   }
 
@@ -56,5 +57,16 @@
 
   .slider__btn--noPill {
     @apply hover:border hover:border-yellow-500;
+  }
+
+  .slider__list .swiper-pagination-bullet {
+    @apply bg-red-400 ring ring-offset-2
+  }
+}
+
+@layer utilities {
+  .slider__item,
+  .slider__item-wrap {
+    height: calc(100vh - 120px);
   }
 }
