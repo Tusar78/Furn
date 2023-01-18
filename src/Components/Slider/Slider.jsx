@@ -2,6 +2,7 @@ import React from "react";
 import { images } from "../../Constant";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // import required modules
 import { Autoplay, EffectFade, Pagination } from "swiper";
 
@@ -70,6 +71,7 @@ const Slider = () => {
           <div className="slider__item-wrap">
             <div className="slider__wrap-content">
               <span className="slider__subtitle">Great Design Collection</span>
+              
               <h2 className="slider__title">Mapple Wood Accent Chair</h2>
               <p className="slider__text">
                 Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do
