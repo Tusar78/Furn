@@ -1,5 +1,4 @@
 import React from "react";
-import { images } from "../../Constant";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
