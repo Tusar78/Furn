@@ -80,11 +80,7 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
-                src={images.slider01}
-                alt="Slider Img"
-                className="slider__img"
-              />
+              
             </div>
           </div>
         </SwiperSlide>
@@ -135,11 +131,7 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
-                src={images.slider02}
-                alt="Slider Img"
-                className="slider__img"
-              />
+              
             </div>
           </div>
         </SwiperSlide>
@@ -190,11 +182,7 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
-                src={images.slider03}
-                alt="Slider Img"
-                className="slider__img"
-              />
+              
             </div>
           </div>
         </SwiperSlide>
