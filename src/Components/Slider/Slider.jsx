@@ -3,6 +3,11 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 
+// import Images
+import {slider01} from "../../assets/images/slider1.png";
+import {slider02} from "../../assets/images/slider1.png";
+import {slider03} from "../../assets/images/slider1.png";
+
 // import required modules
 import { Autoplay, EffectFade, Pagination } from "swiper";
 
@@ -80,7 +85,11 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              
+              <img
+                src={images.slider01}
+                alt="Slider Img"
+                className="slider__img"
+              />
             </div>
           </div>
         </SwiperSlide>
@@ -131,7 +140,11 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              
+              <img
+                src={images.slider02}
+                alt="Slider Img"
+                className="slider__img"
+              />
             </div>
           </div>
         </SwiperSlide>
@@ -182,7 +195,11 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              
+              <img
+                src={images.slider03}
+                alt="Slider Img"
+                className="slider__img"
+              />
             </div>
           </div>
         </SwiperSlide>
