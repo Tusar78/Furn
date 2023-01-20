@@ -86,7 +86,7 @@ const Slider = () => {
             </div>
             <div className="slider__wrap-image">
               <img
-                src={images.slider01}
+                src={slider01}
                 alt="Slider Img"
                 className="slider__img"
               />
@@ -141,7 +141,7 @@ const Slider = () => {
             </div>
             <div className="slider__wrap-image">
               <img
-                src={images.slider02}
+                src={slider02}
                 alt="Slider Img"
                 className="slider__img"
               />
@@ -196,7 +196,7 @@ const Slider = () => {
             </div>
             <div className="slider__wrap-image">
               <img
-                src={images.slider03}
+                src={slider03}
                 alt="Slider Img"
                 className="slider__img"
               />
