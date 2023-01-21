@@ -156,7 +156,7 @@ const Slider = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   ease: "linear",
-                  duration: 0.4,
+                  duration: 0.5,
                 }}
               >
                 <span className="slider__subtitle">
