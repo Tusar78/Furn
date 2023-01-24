@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 
 // import Images
-import {slider01} from "../../assets/images/slider1.png";
-import {slider02} from "../../assets/images/slider1.png";
-import {slider03} from "../../assets/images/slider1.png";
+import slider01 from "../../assets/images/slider1.png";
+import slider02 from "../../assets/images/slider2.png";
+import slider03 from "../../assets/images/slider3.png";
 
 // import required modules
 import { Autoplay, EffectFade, Pagination } from "swiper";
