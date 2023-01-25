@@ -48,7 +48,7 @@ const Slider = () => {
                   ease: "linear",
                   duration: 0.5,
                 }}
-              >
+              >                
                 <span className="slider__subtitle">
                   Great Design Collection
                 </span>
@@ -85,7 +85,10 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
+              <motion.img
+                initial={{ opacity: 0, x: 10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
                 src={slider01}
                 alt="Slider Img"
                 className="slider__img"
@@ -140,11 +143,7 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
-                src={slider02}
-                alt="Slider Img"
-                className="slider__img"
-              />
+              <img src={slider02} alt="Slider Img" className="slider__img" />
             </div>
           </div>
         </SwiperSlide>
@@ -195,11 +194,7 @@ const Slider = () => {
               </motion.div>
             </div>
             <div className="slider__wrap-image">
-              <img
-                src={slider03}
-                alt="Slider Img"
-                className="slider__img"
-              />
+              <img src={slider03} alt="Slider Img" className="slider__img" />
             </div>
           </div>
         </SwiperSlide>

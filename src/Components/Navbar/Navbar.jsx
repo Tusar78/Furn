@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import {
   RiCloseLine,
@@ -15,7 +16,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className="navigation section">
+    <motion.section 
+      className="navigation section"
+      initial={{opacity: 1}}
+      scr={{position: "fixed"}}
+    >
       <div
         className={search ? "navigation__search--show" : "navigation__search"}
       >
@@ -88,7 +93,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </section>
+    </motion.section>
   );
 };
 
