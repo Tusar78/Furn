@@ -1,0 +1,56 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .popular-product {
+    @apply pt-24 pb-24;
+  }
+
+  .popular-product__list {
+    @apply grid grid-cols-[25%_50%_25%] gap-8;
+  }
+}
+
+.popular-product__item {
+  @apply flex flex-col px-5 pb-5 bg-gray-100 text-center rounded-md;
+}
+
+.popular-product__title {
+  @apply text-xl font-bold font-head text-gray-900 pt-5 pb-3;
+}
+
+.popular-product__img-wrap {
+  @apply mx-auto;
+}
+
+.popular-product__text {
+  @apply text-base font-body;
+}
+
+.popular--one {
+  @apply pt-10;
+}
+
+.popular-product__item:nth-child(2) {
+  @apply flex-row text-left items-center;
+}
+
+.popular--two {
+  @apply flex-shrink-0 pt-10 pr-7;
+}
+
+.product__text--two {
+  @apply pb-3;
+}
+
+.popular-product__price {
+  @apply font-semibold font-head text-base mb-5;
+}
+
+.popular-product__price--number {
+  @apply text-yellow-500
+}
+
+.popular-product__btn {
+  @apply pt-[0.6rem] pb-2 px-6 shadow-md bg-white rounded-md font-body font-medium text-base;
+}
