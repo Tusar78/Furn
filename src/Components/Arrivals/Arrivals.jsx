@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Arrival from '../Arrival/Arrival';
 
 const Arrivals = () => {
   const [arrivals, setArrivals] = useState([]);
@@ -12,7 +13,9 @@ const Arrivals = () => {
   
   return (
     <div className='arrivals__list'>
-      
+      {
+        arrivals.map(arrival => <Arrival key={arrival.id} arrival={arrival}/>)
+      }
     </div>
   );
 };

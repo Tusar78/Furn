@@ -6,7 +6,7 @@ const NewArrivals = () => {
     <section className='arrivals'>
       <div className="custom-container">
         <div className="arrivals__content">
-          <h2 className="arrivals__title">New Arrivals</h2>
+          <h2 className="arrivals__title">New Arrival</h2>
           <Arrivals />
         </div>
       </div>
