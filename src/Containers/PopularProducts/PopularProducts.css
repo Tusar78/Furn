@@ -52,5 +52,5 @@
 }
 
 .popular-product__btn {
-  @apply pt-[0.6rem] pb-2 px-6 shadow-md bg-white rounded-md font-body font-medium text-base;
+  @apply pt-[0.6rem] pb-2 px-6 border border-gray-300 rounded-md font-body font-medium text-base ring-gray-300 focus:ring-2;
 }
